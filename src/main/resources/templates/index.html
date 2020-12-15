@@ -32,6 +32,15 @@
 			</div>
 		</div>
 	</div>
+        <div th:if="${zipcodes!=null}">
+          <table>
+            <tbody>
+              <tr th:each="zipcode : ${zipcodes}">
+                <td th:text="${zipcode.zipcode}"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 </body>	
 
 </html>
